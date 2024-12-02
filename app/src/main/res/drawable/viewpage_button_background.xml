@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Trạng thái khi nhấn vào button -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#E8E8E8" /> <!-- Màu khi nhấn -->
+            <corners android:radius="5dp" /> <!-- Bo góc -->
+        </shape>
+    </item>
+
+    <!-- Trạng thái mặc định của button -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#A9A9A9" /> <!-- Màu nền -->
+            <corners android:radius="5dp" /> <!-- Bo góc -->
+            <stroke android:width="3dp" android:color="@color/black" /> <!-- Viền -->
+        </shape>
+    </item>
+</selector>

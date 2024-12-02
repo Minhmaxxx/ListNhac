@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#B8DFFE">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPlaylist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/viewpage_button_background"
+            android:text="Nhạc"
+            android:minWidth="100dp"
+            android:minHeight="40dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="0dp" /> <!-- Không có padding -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSavedList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/viewpage_button_background"
+            android:text="Nhạc yêu thích❤️"
+            android:minWidth="100dp"
+            android:minHeight="40dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="0dp" /> <!-- Không có padding -->
+
+    </LinearLayout>
+
+    <!-- ViewPager2 để chứa các fragment -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B8DFFE"/>
+
+</LinearLayout>
